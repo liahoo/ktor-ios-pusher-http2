@@ -19,6 +19,7 @@ application {
 
 repositories {
     mavenLocal()
+    mavenCentral()
     jcenter()
     maven { url = uri("https://kotlin.bintray.com/ktor") }
 }
@@ -36,6 +37,7 @@ dependencies {
     implementation("io.ktor:ktor-client-core-jvm:$ktor_version")
     implementation("io.ktor:ktor-client-jetty:$ktor_version")
     implementation("com.clevertap.apns:apns-http2:1.0.3")
+    implementation("io.netty.netty-tcnative-boringssl-static:2.0.26.Final")
 
     testImplementation("io.ktor:ktor-server-tests:$ktor_version")
 }
